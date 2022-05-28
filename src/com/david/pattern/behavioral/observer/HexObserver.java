@@ -1,7 +1,7 @@
 package com.david.pattern.behavioral.observer;
 
-public class HexaObserver extends Observer {
-    public HexaObserver(Subject subject) {
+public class HexObserver extends Observer {
+    public HexObserver(Subject subject) {
         this.subject = subject;
         this.subject.registerObserver(this);
     }

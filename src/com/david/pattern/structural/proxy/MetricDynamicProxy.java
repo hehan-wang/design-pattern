@@ -22,7 +22,7 @@ public class MetricDynamicProxy<T> {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             long startTimestamp = System.currentTimeMillis();
-            Object result = method.invoke(t, args);
+            Object result = method.invoke(t, args);//原始方法调用
             long endTimeStamp = System.currentTimeMillis();
             long responseTime = endTimeStamp - startTimestamp;
             String apiName = t.getClass().getName() + ":" + method.getName();

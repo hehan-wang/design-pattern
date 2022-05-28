@@ -4,7 +4,7 @@ public class ObserverDemo {
     public static void main(String[] args) {
         Subject subject = new Subject();
 
-        new HexaObserver(subject);
+        new HexObserver(subject);
         new OctalObserver(subject);
         new BinaryObserver(subject);
 
